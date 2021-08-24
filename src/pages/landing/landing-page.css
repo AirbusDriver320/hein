@@ -1,0 +1,46 @@
+.landing {
+    text-align: center;
+  }
+  
+  .logo,
+  .logo2 {
+    height: 20vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .logo {
+      animation: logo-spin-cw infinite 20s linear;
+    }
+    .logo2 {
+      animation: logo-spin-acw infinite 20s linear;
+    }
+  }
+  
+  .landing-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: whitesmoke;
+  }
+  
+  @keyframes logo-spin-cw {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes logo-spin-acw {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+  

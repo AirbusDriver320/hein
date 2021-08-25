@@ -73,7 +73,7 @@ export default function PortfolioPage() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions className={classes.button}>
-                        <Button size="small" color="primary" href="http://jika.herokuapp.com/" target="_blank">
+                        <Button size="small" color="primary" href="https://jika.herokuapp.com/" target="_blank">
                             View website
                         </Button>
                     </CardActions>

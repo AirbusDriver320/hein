@@ -1,46 +1,62 @@
-.landing {
-    text-align: center;
+.logo,
+.logo2 {
+  height: 10vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin-cw infinite 20s linear;
   }
-  
-  .logo,
   .logo2 {
-    height: 20vmin;
-    pointer-events: none;
+    animation: logo-spin-acw infinite 20s linear;
   }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .logo {
-      animation: logo-spin-cw infinite 20s linear;
-    }
-    .logo2 {
-      animation: logo-spin-acw infinite 20s linear;
-    }
+}
+
+.landing-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 3rem;
+  font-size: calc(10px + 2vmin);
+  color: whitesmoke;
+  background-image: url(../../assets/codebg.jpg);
+  background-size: 85pc 100vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.sub1 {
+  margin-top: -1rem;
+  color: #7e7e7e;
+}
+
+.sub2 {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  color: #7e7e7e;
+}
+
+.sub3 {
+  margin-top: 1rem;
+  color: #7e7e7e;
+}
+
+@keyframes logo-spin-cw {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .landing-header {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: whitesmoke;
+  to {
+    transform: rotate(360deg);
   }
-  
-  @keyframes logo-spin-cw {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+}
+@keyframes logo-spin-acw {
+  from {
+    transform: rotate(360deg);
   }
-  @keyframes logo-spin-acw {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0deg);
-    }
+  to {
+    transform: rotate(0deg);
   }
-  
+}

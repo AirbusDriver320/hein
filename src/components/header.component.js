@@ -10,7 +10,6 @@ import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 
 import LandingPage from '../pages/landing/landing-page';
-import AboutPage from '../pages/about/about';
 import PortfolioPage from '../pages/portfolio-page/portfolio-page';
 import ContactPage from '../pages/contact/contact-page';
 
@@ -79,9 +78,8 @@ export default function Header() {
           centered
         >
           <Tab label="HOME" {...a11yProps(0)} />
-          <Tab label="About" {...a11yProps(1)} />
-          <Tab label="Portfolio" {...a11yProps(2)} />
-          <Tab label="Contact" {...a11yProps(3)} />
+          <Tab label="Portfolio" {...a11yProps(1)} />
+          <Tab label="Contact" {...a11yProps(2)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
@@ -90,15 +88,12 @@ export default function Header() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <Container><LandingPage /></Container>
+          <LandingPage />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          <Container><AboutPage /></Container>
-        </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
           <Container><PortfolioPage /></Container>
         </TabPanel>
-        <TabPanel value={value} index={3} dir={theme.direction}>
+        <TabPanel value={value} index={2} dir={theme.direction}>
           <Container><ContactPage /></Container>
         </TabPanel>
       </SwipeableViews>

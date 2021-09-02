@@ -14,6 +14,7 @@ import './portfolio-page.styles.css';
 import jikapic from '../../assets/jika.jpg'
 import vnavpic from '../../assets/vnav.jpg'
 import atbshow from '../../assets/atbshow.jpg'
+import crwnpic from '../../assets/crwn.jpg'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -182,6 +183,41 @@ export default function PortfolioPage() {
                         </Button>
                         <Button size="small" color="primary" href="http://atb-show.herokuapp.com/" target="_blank">
                             View Angular version
+                        </Button>
+                    </CardActions>
+                </Card> 
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+                <Card className={classes.root}>
+                    <CardActionArea>
+                        <CardMedia
+                        component="img"
+                        alt="CRWN Clothing Demo"
+                        height="200"
+                        image={crwnpic}
+                        title="CRWN Clothing Demo"
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            CRWN Clothing Demo
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                        A frontend clothing store for portfolio purposes.
+                        <p>
+                            Frontend:
+                            <div>
+                                <Chip size="small" label="React.js" className='chips' /><Chip size="small" label="Firebase" className='chips' />
+                                <Chip size="small" label="Firestore" className='chips' /><Chip size="small" label="Redux" className='chips' />
+                                <Chip size="small" label="Stripe" className='chips' /><Chip size="small" label="HTML5" className='chips' />
+                                <Chip size="small" label="CSS3" className='chips' /><Chip size="small" label="JavaScript" className='chips' />
+                            </div>
+                        </p>
+                        </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <CardActions className={classes.button}>
+                        <Button size="small" color="primary" href="https://crwn-inc.herokuapp.com/" target="_blank">
+                            View website
                         </Button>
                     </CardActions>
                 </Card> 

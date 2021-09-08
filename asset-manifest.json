@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hein/static/css/main.8f3e1bf7.chunk.css",
-    "main.js": "/hein/static/js/main.358b932a.chunk.js",
-    "main.js.map": "/hein/static/js/main.358b932a.chunk.js.map",
+    "main.js": "/hein/static/js/main.c5d20782.chunk.js",
+    "main.js.map": "/hein/static/js/main.c5d20782.chunk.js.map",
     "runtime-main.js": "/hein/static/js/runtime-main.572c315f.js",
     "runtime-main.js.map": "/hein/static/js/runtime-main.572c315f.js.map",
     "static/js/2.2e0cc8b6.chunk.js": "/hein/static/js/2.2e0cc8b6.chunk.js",
@@ -21,6 +21,7 @@
     "static/media/jika.08c0248e.jpg": "/hein/static/media/jika.08c0248e.jpg",
     "static/media/logo.6ce24c58.svg": "/hein/static/media/logo.6ce24c58.svg",
     "static/media/mongodb.41634622.png": "/hein/static/media/mongodb.41634622.png",
+    "static/media/nextjs.43b97e79.jpg": "/hein/static/media/nextjs.43b97e79.jpg",
     "static/media/nodejs.22b2d373.svg": "/hein/static/media/nodejs.22b2d373.svg",
     "static/media/vnav.fc5e78cc.jpg": "/hein/static/media/vnav.fc5e78cc.jpg"
   },
@@ -28,6 +29,6 @@
     "static/js/runtime-main.572c315f.js",
     "static/js/2.2e0cc8b6.chunk.js",
     "static/css/main.8f3e1bf7.chunk.css",
-    "static/js/main.358b932a.chunk.js"
+    "static/js/main.c5d20782.chunk.js"
   ]
 }
